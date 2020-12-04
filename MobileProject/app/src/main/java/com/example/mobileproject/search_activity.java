@@ -21,13 +21,25 @@ public class search_activity extends AppCompatActivity {
 
             public void onClick(View view){
 
-                Intent intent = new Intent(getApplicationContext(), detail_askActivity.class);
+                Intent intent = new Intent(getApplicationContext(), DetailActivityActivity.class);
 
                 startActivity(intent);
             }
 
         });
 
+        ImageButton inimabtn = (ImageButton)findViewById(R.id.inMoim);
+
+        inimabtn.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View view){
+
+                Intent intent = new Intent(getApplicationContext(), indetailactivity.class);
+
+                startActivity(intent);
+            }
+
+        });
     }
 
 

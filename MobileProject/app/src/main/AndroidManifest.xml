@@ -10,6 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileProject">
+        <activity android:name=".indetailactivity"></activity>
         <activity
             android:name=".third_fragment"
             tools:ignore="Instantiatable" />
@@ -19,21 +20,18 @@
         <activity
             android:name=".first_fragment"
             tools:ignore="Instantiatable" />
-        <activity android:name=".detail_askActivity">
+        <activity android:name=".DetailActivityActivity">
+
         </activity>
-        <activity android:name=".detail_personActivity" >
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".search_activity">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".DetailActivityActivity" />
-        <activity android:name=".MainActivity">
-
-        </activity>
-        <activity android:name=".search_activity" >
-
         </activity>
     </application>
 

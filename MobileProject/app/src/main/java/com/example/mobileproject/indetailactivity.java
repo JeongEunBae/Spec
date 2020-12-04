@@ -3,12 +3,11 @@ package com.example.mobileproject;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import android.content.Context;
 import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class detail_personActivity extends AppCompatActivity {
+public class indetailactivity extends AppCompatActivity {
 
     private TabLayout tabLayout;
     private ViewPager viewPager;
@@ -17,7 +16,7 @@ public class detail_personActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_person);
+        setContentView(R.layout.activity_indetailactivity);
 
         tabLayout = (TabLayout)findViewById(R.id.tabs);
         tabLayout.addTab(tabLayout.newTab().setText("모임 정보"));
@@ -48,6 +47,4 @@ public class detail_personActivity extends AppCompatActivity {
             }
         });
     }
-
-
 }
