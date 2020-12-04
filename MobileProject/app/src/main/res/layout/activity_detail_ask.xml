@@ -233,91 +233,67 @@
                 </RelativeLayout>
             </LinearLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
 
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/tutu"
-                    android:fontFamily="@font/bold"
-                    android:text="@string/infoMoim"
-                    android:textColor="@color/black"
-                    android:textSize="10sp"
-                    tools:ignore="SmallSp,UnusedAttribute" />
+                <FrameLayout
+                    android:id="@+id/fragment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/linearLayout" />
 
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/tutu"
-                    android:fontFamily="@font/bold"
-                    android:text="@string/infoPeople"
-                    android:textColor="@color/black"
-                    android:textSize="10sp"
-                    tools:ignore="SmallSp,UnusedAttribute" />
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
 
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/tutu"
-                    android:fontFamily="@font/bold"
-                    android:text="@string/ask"
-                    android:textColor="@color/black"
-                    android:textSize="10sp"
-                    tools:ignore="SmallSp,UnusedAttribute" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-
-                    <EditText
-                        android:id="@+id/apply"
-                        android:layout_width="wrap_content"
-                        android:inputType="textMultiLine"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_weight="9"
-                        android:fontFamily="@font/bold"
-                        android:maxLines="2"
-                        android:hint="@string/askInputHint"
-                        android:textColor="@color/black"
-                        android:textSize="13dp"
-                        />
 
                     <Button
-                        android:id="@+id/applyBtn"
-                        android:layout_weight="1"
-                        android:layout_marginRight="20dp"
+                        android:id="@+id/infoMoim"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignEnd="@+id/apply"
-                        android:backgroundTint="@color/themeColor"
-                        android:fontFamily="@font/medium"
-                        android:text="@string/apply"
-                        android:textColor="@color/white"
-                        android:textSize="10dp"
-                        android:layout_marginTop="10dp"
-                        tools:ignore="ObsoleteLayoutParam"
-                        android:layout_alignRight="@+id/apply" />
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/tutu"
+                        android:fontFamily="@font/bold"
+                        android:text="@string/infoMoim"
+                        android:textColor="@color/black"
+                        android:textSize="10sp" />
 
-            </LinearLayout>
+                    <Button
+                        android:id="@+id/infopeople"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/tutu"
+                        android:fontFamily="@font/bold"
+                        android:text="@string/infoPeople"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp,UnusedAttribute" />
 
+                    <Button
+                        android:id="@+id/ask"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/tutu"
+                        android:fontFamily="@font/bold"
+                        android:text="@string/ask"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp,UnusedAttribute" />
+                </LinearLayout>
+            </RelativeLayout>
 
 
         </LinearLayout>

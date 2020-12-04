@@ -223,7 +223,7 @@
                         tools:ignore="UnusedAttribute"
                         android:layout_alignParentEnd="true" />
                     <View
-                        android:layout_width="match_parent"
+                        android:layout_width="fill_parent"
                         android:layout_alignParentBottom="true"
                         android:background="@color/gray"
                         android:layout_height="5dp"
@@ -232,97 +232,19 @@
                 </RelativeLayout>
             </LinearLayout>
 
-            <LinearLayout
+            <com.google.android.material.tabs.TabLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <Button
-                    android:layout_marginLeft="20dp"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/tutu"
-                    android:text="@string/infoMoim"
-                    android:fontFamily="@font/bold"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:textSize="10sp"
-                    tools:ignore="SmallSp,UnusedAttribute" />
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/tutu"
-                    android:text="@string/infoPeople"
-                    android:fontFamily="@font/bold"
-                    android:textColor="@color/black"
-                    android:textSize="10sp"
-                    android:layout_weight="1"
-                    android:layout_marginRight="10dp"
-                    tools:ignore="SmallSp,UnusedAttribute" />
-
-                <Button
-                    android:layout_marginRight="20dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_width="0dp"
-                    android:textSize="10sp"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/tutu"
-                    android:text="@string/ask"
-                    android:fontFamily="@font/bold"
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    tools:ignore="SmallSp,UnusedAttribute" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
+                android:id="@+id/tabs"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                tools:ignore="MissingConstraints"
+                >
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/infoPeople"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/bold"
-                    android:textSize="14dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="20dp"/>
+            </com.google.android.material.tabs.TabLayout>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/email"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/medium"
-                    android:textSize="12dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/phoneNum"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/medium"
-                    android:textSize="12dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/sosok"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/medium"
-                    android:textSize="12dp"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"/>
-
-            </LinearLayout>
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
 
         </LinearLayout>
     </ScrollView>
