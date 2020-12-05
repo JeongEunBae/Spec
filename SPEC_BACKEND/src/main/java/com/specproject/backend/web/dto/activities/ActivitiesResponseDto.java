@@ -1,12 +1,15 @@
 package com.specproject.backend.web.dto.activities;
 
 import com.specproject.backend.domain.activities.Activities;
+import com.specproject.backend.web.dto.ResponseDto;
 import lombok.Getter;
+
+import java.sql.Timestamp;
 
 
 @Getter
-public class ActivitiesResponseDto {
-    private Long actID;
+public class ActivitiesResponseDto extends ResponseDto {
+    private Long act_id;
     private String actName;
     private String organizerPlan;
     private String organizerManage;
@@ -20,9 +23,11 @@ public class ActivitiesResponseDto {
     private String manager;
     private String page;
     private String phone_number;
+    private int maxPeople;
+    private int click_count;
 
     public ActivitiesResponseDto(Activities entity) {
-        this.actID = entity.getActID();
+        this.act_id = entity.getAct_id();
         this.actName = entity.getActName();
         this.organizerPlan = entity.getOrganizerPlan();
         this.organizerManage = entity.getOrganizerManage();
@@ -36,5 +41,7 @@ public class ActivitiesResponseDto {
         this.manager = entity.getManager();
         this.page = entity.getPage();
         this.phone_number = entity.getPhone_number();
+        this.maxPeople = entity.getMaxPeople();
+        this.click_count = entity.getClick_count();
     }
 }

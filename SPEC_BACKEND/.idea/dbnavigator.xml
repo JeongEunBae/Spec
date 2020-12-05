@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DataExportManager">
@@ -22,11 +22,11 @@
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
-    <show-object-properties value="true" />
+    <show-object-properties value="false" />
     <loaded-nodes>
       <connection connection-id="70f4d071-1acc-4082-b60f-844f3f576b56">
-        <schema name="mysql" object-types="function, table, view" />
-        <schema name="specproject" object-types="function, dataset trigger, table, view, column, constraint, index, procedure" />
+        <schema name="mysql" object-types="view, function, table" />
+        <schema name="specproject" object-types="view, function, table, procedure" />
       </connection>
     </loaded-nodes>
   </component>
@@ -38,7 +38,26 @@ show tables;
 
 show variables like 'c%';
 
-select * from test;]]></console>
+select * from test;
+INSERT INTO activities values(1, '1', '배정은', '배정은', '아', '2020-12-05 1:1:1', '2020-12-05 1:1:1', 'ㅇ', 2000, '1', '당연히 잘 안돼~~', 'ㅇ', 
+'1', '010-8380-0922', 20);
+
+
+select * from ACTIVITIES;
+select * from posts;
+select * from activities;
+desc posts;
+desc activities;
+
+SELECT * FROM activities;
+SELECT * FROM activities;
+drop table ACTIVITIES;
+desc activities;
+SELECT * FROM activities a ORDER BY a.act_id;
+
+create table act_apply(
+    id bigint(20) PRIMARY KEY
+);]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -48,6 +67,9 @@ select * from test;]]></console>
     <connection id="70f4d071-1acc-4082-b60f-844f3f576b56" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="70f4d071-1acc-4082-b60f-844f3f576b56" dataset="specproject.activities" active-filter-id="" />
+    <filter-actions connection-id="70f4d071-1acc-4082-b60f-844f3f576b56" dataset="specproject.ACTIVITIES" active-filter-id="" />
+    <filter-actions connection-id="70f4d071-1acc-4082-b60f-844f3f576b56" dataset="specproject.act_apply" active-filter-id="" />
     <filter-actions connection-id="70f4d071-1acc-4082-b60f-844f3f576b56" dataset="specproject.test" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
@@ -89,7 +111,7 @@ select * from test;]]></console>
           <url-type value="DATABASE" />
           <host value="specproject.cuozojo5m1bf.ap-northeast-2.rds.amazonaws.com" />
           <port value="3306" />
-          <database value="mysql" />
+          <database value="specproject" />
           <type value="USER_PASSWORD" />
           <user value="jeongeun" />
           <deprecated-pwd value="d2pkZG1zMDkyMg==" />
