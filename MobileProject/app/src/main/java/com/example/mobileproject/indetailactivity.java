@@ -3,7 +3,11 @@ package com.example.mobileproject;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -15,6 +19,7 @@ public class indetailactivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_indetailactivity);
 
@@ -45,6 +50,66 @@ public class indetailactivity extends AppCompatActivity {
             public void onTabReselected(TabLayout.Tab tab) {
 
             }
+        });
+
+        Button apply = (Button) findViewById(R.id.inapply);
+
+        apply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), applyMoim.class);
+
+                startActivity(intent);
+            }
+        });
+
+        ImageButton calbtn = (ImageButton) findViewById(R.id.calbtn);
+        calbtn.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(), activityCal.class);
+
+                startActivity(intent);
+            }
+
+        });
+
+        ImageButton checkbtn = (ImageButton) findViewById(R.id.checkbtn);
+        checkbtn.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(), DetailActivityActivity.class);
+
+                startActivity(intent);
+            }
+
+        });
+
+
+        ImageButton bulbbtn = (ImageButton) findViewById(R.id.bulbbtn);
+        bulbbtn.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(), search_activity.class);
+
+                startActivity(intent);
+            }
+
+        });
+
+        ImageButton searchbtn = (ImageButton) findViewById(R.id.searchbtn);
+        searchbtn.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(), DetailActivityActivity.class);
+
+                startActivity(intent);
+            }
+
         });
     }
 }

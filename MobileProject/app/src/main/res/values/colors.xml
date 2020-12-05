@@ -10,4 +10,10 @@
     <color name="themeColor">#B4A6EB</color>
     <color name="tutu">#00FFFFFF</color>
     <color name="gray">#EAEAEA</color>
+    <color name="red">#F15F5F</color>
+    <color name="colorPrimary">#B4A6EB</color>
+    <color name="colorPrimaryDark">#B4A6EB</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorText">#E6E6E6</color>
+    <color name="colorPoint">#EA4545</color>
 </resources>

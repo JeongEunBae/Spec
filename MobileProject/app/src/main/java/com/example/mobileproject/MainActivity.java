@@ -1,27 +1,27 @@
 package com.example.mobileproject;
 
-import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    BottomNavigationView bottomNavigationView;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        bottomNavigationView = findViewById(R.id.bottomNavigationView);
-
-
-    }
 
 }
+
+        /*drawer
+        drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
+        Button draw_btn = (Button)findViewById(R.id.~); -> 주석 제거 후 햄버거 버튼에 연결
+        draw_btn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                drawerLayout.openDrawer(drawerView);
+            }
+        });*/

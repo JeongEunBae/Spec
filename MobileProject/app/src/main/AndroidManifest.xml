@@ -10,7 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileProject">
-        <activity android:name=".indetailactivity"></activity>
+        <activity android:name=".registerActivity">
+
+        </activity>
+        <activity android:name=".applyCal" />
+        <activity android:name=".applyMoim" />
+        <activity android:name=".indetailactivity" />
         <activity
             android:name=".third_fragment"
             tools:ignore="Instantiatable" />
@@ -20,19 +25,23 @@
         <activity
             android:name=".first_fragment"
             tools:ignore="Instantiatable" />
-        <activity android:name=".DetailActivityActivity">
-
+        <activity android:name=".DetailActivityActivity" />
+        <activity android:name=".activityCal">
         </activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".search_activity">
-
-
+        <activity android:name=".search_activity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ActivityRegistration">
+
+        </activity>
+        <activity android:name=".ChangeInformation" />
+        <activity android:name=".NoticeContents" />
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".LoginActivity" />
     </application>
 
 </manifest>
