@@ -15,6 +15,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -28,6 +29,54 @@ public class ActivityRegistration extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity_registration);
+        ImageButton calbtn = (ImageButton) findViewById(R.id.calbtn);
+        calbtn.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(), activityCal.class);
+
+                startActivity(intent);
+            }
+
+        });
+
+        ImageButton checkbtn = (ImageButton) findViewById(R.id.checkbtn);
+        checkbtn.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(), DetailActivityActivity.class);
+
+                startActivity(intent);
+            }
+
+        });
+
+
+        ImageButton bulbbtn = (ImageButton) findViewById(R.id.bulbbtn);
+        bulbbtn.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(), search_activity.class);
+
+                startActivity(intent);
+            }
+
+        });
+
+        ImageButton searchbtn = (ImageButton) findViewById(R.id.searchbtn);
+        searchbtn.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(), KwangSearchMain.class);
+
+                startActivity(intent);
+            }
+
+        });
     }
 }
 

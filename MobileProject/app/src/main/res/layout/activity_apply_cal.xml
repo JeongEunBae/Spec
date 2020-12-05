@@ -72,29 +72,36 @@
                     android:layout_marginRight="20dp">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
                         android:fontFamily="@font/medium"
-                        android:gravity="center_horizontal"
+                        android:gravity="center_horizontal|center_vertical"
                         android:text="@string/applyCal"
                         android:textColor="@color/black"
                         android:textSize="18sp" />
 
                     <ImageButton
                         android:id="@+id/closebtn"
+                        android:layout_centerVertical="true"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:background="@color/tutu"
+                        android:layout_alignParentLeft="true"
                         android:src="@drawable/close_big" />
 
-                    <TextView
-                        android:layout_width="match_parent"
+                    <Button
+                        android:id="@+id/applyActivity"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:fontFamily="@font/medium"
-                        android:gravity="right"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="@color/tutu"
                         android:text="@string/apply"
                         android:textColor="@color/black"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:layout_alignParentRight="true" />
 
                 </RelativeLayout>
 
@@ -204,10 +211,6 @@
 
                     </RelativeLayout>
                 </LinearLayout>
-
-
-
-
 
             </LinearLayout>
         </ScrollView>

@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class NoticeContents extends AppCompatActivity {
@@ -22,5 +24,54 @@ public class NoticeContents extends AppCompatActivity {
 
         tv.setText(value);
         //tv2.setText(value2);
+
+        ImageButton calbtn = (ImageButton) findViewById(R.id.calbtn);
+        calbtn.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View view){
+
+                Intent intent = new Intent(getApplicationContext(), activityCal.class);
+
+                startActivity(intent);
+            }
+
+        });
+
+        ImageButton checkbtn = (ImageButton) findViewById(R.id.checkbtn);
+        checkbtn.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View view){
+
+                Intent intent = new Intent(getApplicationContext(), DetailActivityActivity.class);
+
+                startActivity(intent);
+            }
+
+        });
+
+
+        ImageButton bulbbtn = (ImageButton) findViewById(R.id.bulbbtn);
+        bulbbtn.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View view){
+
+                Intent intent = new Intent(getApplicationContext(), search_activity.class);
+
+                startActivity(intent);
+            }
+
+        });
+
+        ImageButton searchbtn = (ImageButton) findViewById(R.id.searchbtn);
+        searchbtn.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View view){
+
+                Intent intent = new Intent(getApplicationContext(), KwangSearchMain.class);
+
+                startActivity(intent);
+            }
+
+        });
     }
 }

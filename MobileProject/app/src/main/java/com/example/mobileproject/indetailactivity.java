@@ -105,7 +105,7 @@ public class indetailactivity extends AppCompatActivity {
 
             public void onClick(View view) {
 
-                Intent intent = new Intent(getApplicationContext(), DetailActivityActivity.class);
+                Intent intent = new Intent(getApplicationContext(), KwangSearchMain.class);
 
                 startActivity(intent);
             }

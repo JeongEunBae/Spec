@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailActivityActivity">
+    tools:context=".DetailActivityActivity"
+    android:windowSoftInputMode="adjustPan">
 
     <LinearLayout
         android:id="@+id/header"
@@ -46,14 +47,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_weight="1"
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
-            android:layout_marginBottom="60dp"
             android:layout_weight="1"
             android:scrollbars="none"
             tools:ignore="MissingConstraints">
@@ -61,9 +62,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="0dp"
                 android:orientation="vertical"
                 tools:ignore="MissingConstraints">
 
@@ -97,6 +95,7 @@
         </ScrollView>
 
         <LinearLayout
+            android:windowSoftInputMode="adjustPan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">

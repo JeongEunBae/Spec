@@ -46,70 +46,111 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/header"
         tools:ignore="MissingConstraints">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
             android:layout_weight="1"
-            android:background="@color/white"
-            android:orientation="horizontal"
-            tools:ignore="MissingConstraints"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp">
+            android:scrollbars="none">
 
-            <TextView
-                android:id="@+id/tv0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/bold"
-                android:text="@string/applicationContent1"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <Spinner
-                android:id="@+id/spinner"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="80dp"
-                android:fontFamily="@font/medium"/>
-        </LinearLayout>
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/header"
+                tools:ignore="MissingConstraints">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:background="@color/gray" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints">
+
+                    <TextView
+                        android:id="@+id/tv0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bold"
+                        android:text="@string/applicationContent1"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="80dp"
+                        android:fontFamily="@font/medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/list"
+                        android:layout_width="match_parent"
+                        android:layout_height="450dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
 
-            <ListView
-                android:id="@+id/list"
+            <ImageButton
+                android:id="@+id/calbtn"
                 android:layout_width="match_parent"
-                android:layout_height="450dp" />
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@color/themeColor"
+                android:src="@drawable/calender" />
+
+            <ImageButton
+                android:id="@+id/checkbtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@color/themeColor"
+                android:src="@drawable/checkbox_checked" />
+
+            <ImageButton
+                android:id="@+id/bulbbtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@color/themeColor"
+                android:src="@drawable/bulb" />
+
+            <ImageButton
+                android:id="@+id/searchbtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@color/themeColor"
+                android:src="@drawable/search" />
+
         </LinearLayout>
-
     </LinearLayout>
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
-        android:background="@color/themeColor"
-        app:itemBackground="@color/themeColor"
-        app:itemIconTint="@color/white"
-        app:itemTextColor="@color/white"
-        app:labelVisibilityMode="unlabeled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/menu_bottom"
-        tools:ignore="MissingConstraints" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

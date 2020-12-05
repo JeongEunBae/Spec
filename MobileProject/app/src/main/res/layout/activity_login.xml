@@ -1,42 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_marginTop="150dp"
-    tools:context=".LoginActivity">
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/iv1_title"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/spec"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="234dp" />
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/iv1_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="50dp"
-        app:srcCompat="@drawable/wait_pont"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="454dp" />
+        <ImageView
+            android:id="@+id/iv1_title"
+            android:background="@color/tutu"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/spec"
+            />
 
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:background="@drawable/button_background"
-        android:drawableLeft="@drawable/ic_launcher"
-        android:drawablePadding="-70dp"
-        android:paddingLeft="80dp"
-        android:text="Kakao로 시작하기" />
+        <TextView
+            android:layout_marginBottom="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/introduceApp"
+            android:fontFamily="@font/medium"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="30dp"/>
 
-</LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/tutu"
+            app:srcCompat="@drawable/kakao_login_medium_wide"
+            android:text="Kakao로 시작하기"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
