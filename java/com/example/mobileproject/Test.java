@@ -16,9 +16,10 @@ public class Test extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private View drawerView;
     private Button btn1, btn2, btn3, btn4, btn5, btn6;
-    KwangInterested frag1;
+    // KwangInterested frag1;
     NoticeList frag2;
     RecentLookUpList frag3;
+    //KwangWeekList frag4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,62 +29,39 @@ public class Test extends AppCompatActivity {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_item);
         drawerView = findViewById(R.id.drawer);
 
-        frag1 = new KwangInterested();
+        // frag1 = new KwangInterested();
         frag2 = new NoticeList();
         frag3 = new RecentLookUpList();
+        //frag4 = new KwangWeekList();
 
-        Button btn4 = (Button)findViewById(R.id.nav_btn4);
-        Button btn5 = (Button)findViewById(R.id.nav_btn5);
-        Button btn6 = (Button)findViewById(R.id.nav_btn6);
+
+        Button btn5 = (Button) findViewById(R.id.nav_btn5);
+        Button btn6 = (Button) findViewById(R.id.nav_btn6);
         Intent intent2 = getIntent();
-        if(intent2.getExtras().getInt("2")==2){
+        if (intent2.getExtras().getInt("2") == 2) {
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 
             transaction.replace(R.id.test, frag2);
             transaction.addToBackStack(null);
             transaction.commit(); //저장
-        } else if(intent2.getExtras().getInt("3")==3){
+        } else if (intent2.getExtras().getInt("3") == 3) {
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 
             transaction.replace(R.id.test, frag3);
             transaction.addToBackStack(null);
             transaction.commit(); //저장
         }
+        /*btn1 = (Button) findViewById(R.id.btn);
+        btn1.setOnClickListener(new View.OnClickListener(){
 
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 
-//        btn4.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-//
-//                transaction.replace(R.id.test, frag1);
-//                transaction.addToBackStack(null);
-//                transaction.commit(); //저장
-//            }
-//        });
-//
-//        btn5.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-//
-//                transaction.replace(R.id.test, frag2);
-//                transaction.addToBackStack(null);
-//                transaction.commit(); //저장
-//            }
-//        });
-//
-//        btn6.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-//
-//                transaction.replace(R.id.test, frag3);
-//                transaction.addToBackStack(null);
-//                transaction.commit(); //저장
-//            }
-//        });*/
+                transaction.replace(R.id.test, frag4);
+                transaction.addToBackStack(null);
+                transaction.commit(); //저장
+            }
+        });*/
     }
 }

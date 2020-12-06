@@ -7,23 +7,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBar;
 import androidx.fragment.app.Fragment;
 
-public class NoticeList extends Fragment {
-    //공지사항 리스트뷰
+public class KwangWeekList extends Fragment {
+    //날짜 선택 시 리스트 뜨게 할 것
     private View view;
     private ListView listview;
-    private CustomAdapter2 adapter;
-    private String[] Title = {"공지 내용", "공지 내용", "공지 내용", "공지 내용"}; //공모전 이름
-    private String[] State = {"휴무", "업데이트", "공지", "공지"}; //공모전 날짜
-    private String[] Date = {"2020/2", "2020/4", "2020/9", "2020/11"}; //공모전 설명
+    private KwangWeekListAdapter adapter;
+    private String[] Title = {"모바일 수업", "객체 수업", "못 자는 날", "방콕하기"}; //활동 명
+    private String[] Date = {"12월 7일", "12월 7일", "12월 7일", "12월 7일"}; //날짜 받아서 넣기
 
-    public NoticeList() {
+    public KwangWeekList() {
 
     }
 
@@ -31,27 +28,21 @@ public class NoticeList extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        view = inflater.inflate(R.layout.activity_notice, container, false);
+        view = inflater.inflate(R.layout.test, container, false);
 
-        adapter = new CustomAdapter2(getActivity().getApplicationContext()); //어댑터 생성
-        listview = (ListView) view.findViewById(R.id.listV2); //화면에 보여줄 리스트 뷰
+        adapter = new KwangWeekListAdapter(getActivity().getApplicationContext()); //어댑터 생성
+        listview = (ListView) view.findViewById(R.id.list); //화면에 보여줄 리스트 뷰
         listview.setAdapter(adapter); //어댑터를 리스트에 적용
 
         for (int i = 0; i < Title.length; i++) { //타이틀 갯수가 곧 모든 데이터 하나 하나의 갯수(타이틀 갯수가 4개면 다른 데이터 갯수도 4개)
             //이미지 갯수 만큼 데이터를 리스트에 추가해서 출력
-            adapter.addList2(Title[i], State[i], Date[i]);
+            adapter.addItem(Title[i], Date[i]);
         }
-
+        adapter.notifyDataSetChanged();
         //getActivity() 프래그먼트에서 컨텍스트 받아오는 것
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(getActivity(), NoticeContents.class);
-                //intent.putExtra("img", Integer.toString(data.get(position).getProfile()));
-                //intent.putExtra("Title", adapter.getItemId(position));
-                //intent.putExtra("Date", Date);
-                startActivity(intent);
-                adapter.notifyDataSetChanged();
             }
         });
         return view;
