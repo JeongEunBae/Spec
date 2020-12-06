@@ -1,0 +1,84 @@
+{{>layout/header}}
+
+<h1>활동 등록</h1>
+
+<div class="col-md-12">
+    <div class="col-md-4">
+        <form>
+            <div class="form-group">
+                <label for="act_name">활동명</label>
+                <input type="text" class="form-control" id="act_name" placeholder="* 필수 입력">
+            </div>
+
+            <div class="form-group">
+                <label for="organizer_plan">주최사</label>
+                <input type="text" class="form-control" id="organizer_plan" placeholder="* 필수 입력">
+            </div>
+
+            <div class="form-group">
+                <label for="organizer_manage">주관사</label>
+                <input type="text" class="form-control" id="organizer_manage" placeholder="* 필수 입력">
+            </div>
+
+            <div class="form-group">
+                <label for="tag">분야 선택</label>
+                <input type="text" class="form-control" id="tag" placeholder="* 필수 입력">
+            </div>
+
+            <div class="form-group">
+                <label for="start_period">접수 기간 (부터)</label>
+                <input type="text" class="form-control" id="start_period" placeholder="* 필수 입력">
+            </div>
+
+            <div class="form-group">
+                <label for="end_period">접수 기간 (까지)</label>
+                <input type="text" class="form-control" id="end_period" placeholder="* 필수 입력">
+            </div>
+
+            <div class="form-group">
+                <label for="contents">내용</label>
+                <textarea class = "form-control" id="contents"> </textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="price">가격</label>
+                <input type="text" class="form-control" id="price">
+            </div>
+
+            <div class="form-group">
+                <label for="poster">포스터</label>
+                <input type="text" class="form-control" id="poster">
+            </div>
+
+            <div class="form-group">
+                <label for="file">첨부파일</label>
+                <input type="text" class="form-control" id="file">
+            </div>
+
+            <div class="form-group">
+                <label for="manager">담당자</label>
+                <input type="text" class="form-control" id="manager" placeholder="* 필수 입력">
+            </div>
+
+            <div class="form-group">
+                <label for="page">홈페이지</label>
+                <input type="text" class="form-control" id="page">
+            </div>
+
+            <div class="form-group">
+                <label for="phone_number">연락처</label>
+                <input type="text" class="form-control" id="phone_number" placeholder="* 필수 입력">
+            </div>
+
+            <div class="form-group">
+                <label for="max_people">인원 수</label>
+                <input type="text" class="form-control" id="max_people">
+            </div>
+
+        </form>
+        <a href="/" role="button" class="btn btn-secondary">취소</a>
+        <button type="button" class="btn btn-primary" id="btn-save">등록</button>
+    </div>
+</div>
+
+{{>layout/footer}}
