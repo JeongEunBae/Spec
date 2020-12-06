@@ -81,5 +81,9 @@ public class Activities extends BaseEntity {
         this.maxPeople = maxPeople;
         this.click_count = click_count;
     }
+
+    public void update(int click_count) {
+        this.click_count = click_count;
+    }
 }
 

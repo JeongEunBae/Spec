@@ -9,7 +9,7 @@ import java.util.List;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping(path = "api/v1/actapply")
+@RequestMapping(path = "api/v1/act_apply")
 public class ActApplyController {
     private final ActApplyService actApplyService;
 

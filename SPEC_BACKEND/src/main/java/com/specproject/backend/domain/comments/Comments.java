@@ -19,7 +19,7 @@ public class Comments extends BaseEntity {
     private Long comment_id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "act_id") // Foreign KEY 지정
+    @JoinColumn(name = "act_id", nullable = false) // Foreign KEY 지정
     private Activities activities;
 
     @Column(length = 100, nullable = false) // 데이터 사이즈 조정, null 여부 설정

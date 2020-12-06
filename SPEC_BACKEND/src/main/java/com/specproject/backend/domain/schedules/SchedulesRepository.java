@@ -11,12 +11,12 @@ import java.util.List;
 public interface SchedulesRepository extends JpaRepository<Schedules, Long> {
     List<Schedules>findAll();
 
-    @Query(value = "SELECT s FROM Schedules s WHERE s.title LIKE %:title%")
+    @Query(nativeQuery = true, value = "SELECT s FROM Schedules s WHERE s.title LIKE %:title%")
     List<Schedules> findTitle(@Param("title") String title);
 
-    @Query(value = "SELECT s FROM Schedules s WHERE s.start_date = :date OR s.end_date = :date")
+    @Query(nativeQuery = true, value = "SELECT s FROM Schedules s WHERE s.start_date = :date OR s.end_date = :date")
     List<Schedules> findDate(@Param("date") String date);
 
-    @Query(value = "SELECT s FROM Schedules s WHERE s.memo LIKE %:memo%")
+    @Query(nativeQuery = true, value = "SELECT s FROM Schedules s WHERE s.memo LIKE %:memo%")
     List<Schedules> findMemo(@Param("memo") String memo);
 }

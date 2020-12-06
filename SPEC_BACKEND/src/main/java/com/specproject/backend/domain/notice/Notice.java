@@ -21,16 +21,16 @@ public class Notice extends BaseEntity {
     private String category;
 
     @Column(columnDefinition = "DATE", nullable = false)
-    private String create_date;
+    private String save_date;
 
     @Column(columnDefinition = "LONGTEXT")
     private String contents;
 
     @Builder
-    private Notice(String category, String create_date, String contents)
+    private Notice(String category, String save_date, String contents)
     {
         this.category = category;
-        this.create_date = create_date;
+        this.save_date = save_date;
         this.contents = contents;
     }
 }
