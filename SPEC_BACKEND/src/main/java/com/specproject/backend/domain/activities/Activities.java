@@ -2,6 +2,7 @@ package com.specproject.backend.domain.activities;
 
 import com.specproject.backend.domain.BaseEntity;
 import lombok.*;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -9,8 +10,8 @@ import java.sql.Timestamp;
 @Getter
 @Setter
 @Entity
+@Component
 @NoArgsConstructor(access= AccessLevel.PROTECTED)
-
 public class Activities extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,10 +21,10 @@ public class Activities extends BaseEntity {
     @Column(length = 500, nullable = false)
     private String actName;
 
-    @Column(nullable = false)
+    @Column
     private String organizerPlan;
 
-    @Column(nullable = false)
+    @Column
     private String organizerManage;
 
     @Column(nullable = false)
@@ -35,10 +36,10 @@ public class Activities extends BaseEntity {
     @Column(columnDefinition = "DATETIME", nullable = false)
     private String endPeriod;
 
-    @Column(columnDefinition = "TEXT", nullable = false)
+    @Column(columnDefinition = "TEXT")
     private String contents;
 
-    @Column(nullable = false)
+    @Column(columnDefinition = "INT")
     private int price;
 
     @Column(columnDefinition = "MEDIUMBLOB")
@@ -47,15 +48,15 @@ public class Activities extends BaseEntity {
     @Column(columnDefinition = "LONGTEXT")
     private String file;
 
-    @Column(nullable = false, length = 30) // 데이터 사이즈 조정, null 여부 설정
+    @Column(length = 30) // 데이터 사이즈 조정, null 여부 설정
     private String manager;
 
     private String page;
 
-    @Column(nullable = false, length = 30)
+    @Column(length = 30)
     private String phone_number;
 
-    @Column(nullable = false, length = 10)
+    @Column(columnDefinition = "INT")
     private int maxPeople;
 
     @Column(nullable = false)

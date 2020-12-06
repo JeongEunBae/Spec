@@ -10,7 +10,7 @@ import java.sql.Timestamp;
 
 @Getter
 @NoArgsConstructor
-public class ActivitiesSaveRequestDto{
+public class ActivitiesSaveRequestDto extends ResponseDto {
     private String actName;
     private String organizerPlan;
     private String organizerManage;

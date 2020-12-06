@@ -4,12 +4,14 @@ import com.specproject.backend.domain.BaseEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 
 @Getter
 @Entity
 @NoArgsConstructor
+@Component
 public class ActApply extends BaseEntity {
     @Id // Primary KEY 지정
     @GeneratedValue(strategy = GenerationType.IDENTITY)

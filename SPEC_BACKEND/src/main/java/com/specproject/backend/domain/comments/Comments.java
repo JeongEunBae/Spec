@@ -5,12 +5,14 @@ import com.specproject.backend.domain.activities.Activities;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 
 @Getter
 @Entity
 @NoArgsConstructor
+@Component
 public class Comments extends BaseEntity {
     @Id // Primary KEY 지정
     @GeneratedValue(strategy = GenerationType.IDENTITY)

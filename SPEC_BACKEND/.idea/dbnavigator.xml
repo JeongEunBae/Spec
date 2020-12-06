@@ -16,7 +16,7 @@
       <scope value="GLOBAL" />
       <destination value="FILE" />
       <format value="EXCEL" />
-      <charset value="x-windows-949" />
+      <charset value="UTF-8" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -25,8 +25,8 @@
     <show-object-properties value="false" />
     <loaded-nodes>
       <connection connection-id="70f4d071-1acc-4082-b60f-844f3f576b56">
-        <schema name="mysql" object-types="view, function, table" />
-        <schema name="specproject" object-types="view, function, table, procedure" />
+        <schema name="mysql" object-types="function, view, table" />
+        <schema name="specproject" object-types="function, view, dataset trigger, constraint, procedure, column, table, index" />
       </connection>
     </loaded-nodes>
   </component>
@@ -46,16 +46,23 @@ INSERT INTO activities values(1, '1', '배정은', '배정은', '아', '2020-12-
 select * from ACTIVITIES;
 select * from posts;
 select * from activities;
+select * from comments;
 desc posts;
 desc activities;
 
-SELECT * FROM activities;
+SELECT * FROM comments;
 SELECT * FROM activities;
 drop table ACTIVITIES;
+drop table activities;
+drop table comments;
+drop table act_apply;
+drop table posts;
+
+
 desc activities;
 SELECT * FROM activities a ORDER BY a.act_id;
 
-create table act_apply(
+create table comment(
     id bigint(20) PRIMARY KEY
 );]]></console>
     </connection>
@@ -67,6 +74,8 @@ create table act_apply(
     <connection id="70f4d071-1acc-4082-b60f-844f3f576b56" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="70f4d071-1acc-4082-b60f-844f3f576b56" dataset="specproject.comment" active-filter-id="" />
+    <filter-actions connection-id="70f4d071-1acc-4082-b60f-844f3f576b56" dataset="specproject.comments" active-filter-id="" />
     <filter-actions connection-id="70f4d071-1acc-4082-b60f-844f3f576b56" dataset="specproject.activities" active-filter-id="" />
     <filter-actions connection-id="70f4d071-1acc-4082-b60f-844f3f576b56" dataset="specproject.ACTIVITIES" active-filter-id="" />
     <filter-actions connection-id="70f4d071-1acc-4082-b60f-844f3f576b56" dataset="specproject.act_apply" active-filter-id="" />
