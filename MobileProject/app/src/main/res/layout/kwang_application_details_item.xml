@@ -97,6 +97,7 @@
                     android:textSize="20sp"
                     android:textStyle="bold"/>
                 <TextView
+                    android:fontFamily="@font/medium"
                     android:id="@+id/tv5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -119,6 +120,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
+                android:fontFamily="@font/medium"
                 android:text="@string/applicationContent4"
                 android:textColor="@color/black"
                 android:textSize="23sp" />

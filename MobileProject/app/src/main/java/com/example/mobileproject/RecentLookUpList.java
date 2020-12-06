@@ -31,9 +31,6 @@ public class RecentLookUpList extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_recent, container, false);
 
-        ActionBar actionBar = ((MainActivity)getActivity()).getSupportActionBar();
-        actionBar.setTitle("최근 본 모임");
-        actionBar.setDisplayHomeAsUpEnabled(true); //뒤로가기버튼생성
 
         adapter = new CustomAdapter(); //어댑터 생성
         listview = (ListView) view.findViewById(R.id.listV1); //화면에 보여줄 리스트 뷰

@@ -64,6 +64,8 @@ public class KwangSteamed extends AppCompatActivity {
 
                 Intent intent = new Intent(getApplicationContext(), activityCal.class);
 
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+
                 startActivity(intent);
             }
 
@@ -74,7 +76,9 @@ public class KwangSteamed extends AppCompatActivity {
 
             public void onClick(View view){
 
-                Intent intent = new Intent(getApplicationContext(), DetailActivityActivity.class);
+                Intent intent = new Intent(getApplicationContext(), weekly.class);
+
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
 
                 startActivity(intent);
             }
@@ -89,6 +93,8 @@ public class KwangSteamed extends AppCompatActivity {
 
                 Intent intent = new Intent(getApplicationContext(), search_activity.class);
 
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+
                 startActivity(intent);
             }
 
@@ -99,7 +105,9 @@ public class KwangSteamed extends AppCompatActivity {
 
             public void onClick(View view){
 
-                Intent intent = new Intent(getApplicationContext(), DetailActivityActivity.class);
+                Intent intent = new Intent(getApplicationContext(), KwangSearchMain.class);
+
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
 
                 startActivity(intent);
             }

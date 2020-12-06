@@ -74,20 +74,6 @@
                     tools:ignore="MissingConstraints" />
 
 
-
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="20dp"
-                android:backgroundTint="@color/themeColor"
-                android:clickable="true"
-                android:focusable="true"
-                app:borderWidth="0dp"
-                app:srcCompat="@drawable/plus_circle" />
-
             </LinearLayout>
         </ScrollView>
 

@@ -6,7 +6,9 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -51,6 +53,16 @@ public class DetailActivityActivity extends AppCompatActivity {
             }
         });
 
+        Button out_apply = (Button) findViewById(R.id.outapply);
+        out_apply.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View view){
+
+                Toast.makeText(getApplicationContext(), "URL이 복사되었습니다.", Toast.LENGTH_SHORT).show();
+            }
+
+        });
+
 
         ImageButton calbtn = (ImageButton) findViewById(R.id.calbtn);
         calbtn.setOnClickListener(new View.OnClickListener(){
@@ -58,6 +70,8 @@ public class DetailActivityActivity extends AppCompatActivity {
             public void onClick(View view){
 
                 Intent intent = new Intent(getApplicationContext(), activityCal.class);
+
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
 
                 startActivity(intent);
             }
@@ -69,7 +83,9 @@ public class DetailActivityActivity extends AppCompatActivity {
 
             public void onClick(View view){
 
-                Intent intent = new Intent(getApplicationContext(), DetailActivityActivity.class);
+                Intent intent = new Intent(getApplicationContext(), weekly.class);
+
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
 
                 startActivity(intent);
             }
@@ -84,6 +100,8 @@ public class DetailActivityActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(getApplicationContext(), search_activity.class);
 
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+
                 startActivity(intent);
             }
 
@@ -95,6 +113,8 @@ public class DetailActivityActivity extends AppCompatActivity {
             public void onClick(View view){
 
                 Intent intent = new Intent(getApplicationContext(), KwangSearchMain.class);
+
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
 
                 startActivity(intent);
             }

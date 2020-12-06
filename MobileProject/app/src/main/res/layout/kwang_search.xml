@@ -68,13 +68,12 @@
                 <androidx.appcompat.widget.SearchView
                     android:id="@+id/search_view"
                     android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="25dp"
-                    android:background="@color/gray"
-
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="15dp"
                     app:iconifiedByDefault="false"
-                    app:queryBackground="@color/tutu"
-                    app:queryHint="검색" />
+                    app:queryHint="검색어를 입력하시오" />
 
                 <com.google.android.material.tabs.TabLayout
                     android:id="@+id/tabs"
