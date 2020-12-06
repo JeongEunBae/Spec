@@ -32,6 +32,7 @@ public class NoticeList extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         view = inflater.inflate(R.layout.activity_notice, container, false);
+
         adapter = new CustomAdapter2(getActivity().getApplicationContext()); //어댑터 생성
         listview = (ListView) view.findViewById(R.id.listV2); //화면에 보여줄 리스트 뷰
         listview.setAdapter(adapter); //어댑터를 리스트에 적용

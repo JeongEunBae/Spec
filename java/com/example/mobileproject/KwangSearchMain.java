@@ -27,12 +27,6 @@ public class KwangSearchMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.kwang_search);
 
-        // 키보드 내리기
-        View searchView =this.getCurrentFocus();
-        if(searchView != null){
-            InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-            imm.hideSoftInputFromWindow(searchView.getWindowToken(),0);
-        }
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.addTab(tabLayout.newTab().setText("일정"));
@@ -70,6 +64,8 @@ public class KwangSearchMain extends AppCompatActivity {
 
                 Intent intent = new Intent(getApplicationContext(), activityCal.class);
 
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+
                 startActivity(intent);
             }
 
@@ -80,7 +76,9 @@ public class KwangSearchMain extends AppCompatActivity {
 
             public void onClick(View view){
 
-                Intent intent = new Intent(getApplicationContext(), DetailActivityActivity.class);
+                Intent intent = new Intent(getApplicationContext(), weekly.class);
+
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
 
                 startActivity(intent);
             }
@@ -95,6 +93,8 @@ public class KwangSearchMain extends AppCompatActivity {
 
                 Intent intent = new Intent(getApplicationContext(), search_activity.class);
 
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+
                 startActivity(intent);
             }
 
@@ -106,6 +106,8 @@ public class KwangSearchMain extends AppCompatActivity {
             public void onClick(View view){
 
                 Intent intent = new Intent(getApplicationContext(), KwangSearchMain.class);
+
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
 
                 startActivity(intent);
             }

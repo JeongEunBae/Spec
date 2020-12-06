@@ -17,7 +17,6 @@ public class ChangeInformation extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_changeinform);
-        setTitle("내 정보 수정");
 
         final String[] email_item ={"naver.com", "gamil.com", "hotmail.com",
                 "nate.com", "kakao.com", "daum.net"};

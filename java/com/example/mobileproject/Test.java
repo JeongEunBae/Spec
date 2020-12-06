@@ -2,10 +2,8 @@ package com.example.mobileproject;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -38,13 +36,7 @@ public class Test extends AppCompatActivity {
         Button btn5 = (Button)findViewById(R.id.nav_btn5);
         Button btn6 = (Button)findViewById(R.id.nav_btn6);
         Intent intent2 = getIntent();
-        if(intent2.getExtras().getInt("1")==1){
-            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-
-            transaction.replace(R.id.test, frag1);
-            transaction.addToBackStack(null);
-            transaction.commit(); //저장
-        } else if(intent2.getExtras().getInt("2")==2){
+        if(intent2.getExtras().getInt("2")==2){
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 
             transaction.replace(R.id.test, frag2);
@@ -92,6 +84,6 @@ public class Test extends AppCompatActivity {
 //                transaction.addToBackStack(null);
 //                transaction.commit(); //저장
 //            }
-//        });
+//        });*/
     }
 }
