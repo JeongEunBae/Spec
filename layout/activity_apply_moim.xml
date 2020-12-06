@@ -140,6 +140,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/medium"
                             android:layout_marginTop="20dp"
                             android:text="@string/price"
                             android:textColor="@color/black"
@@ -195,13 +196,15 @@
                             android:layout_marginTop="45dp"
                             android:layout_toRightOf="@+id/email"
                             android:text="@string/star"
-                            android:textColor="@color/red" />
+                            android:textColor="@color/red"
+                            android:fontFamily="@font/medium"/>
 
                         <EditText
                             android:id="@+id/addr"
                             android:layout_width="100dp"
                             android:layout_height="40dp"
                             android:layout_marginLeft="20dp"
+                            android:fontFamily="@font/medium"
                             android:layout_marginTop="35dp"
                             android:layout_toRightOf="@+id/email"
                             android:backgroundTint="@color/gray"
@@ -222,6 +225,7 @@
                             android:layout_width="100dp"
                             android:layout_height="40dp"
                             android:layout_marginLeft="20dp"
+                            android:fontFamily="@font/medium"
                             android:layout_marginTop="35dp"
                             android:layout_toRightOf="@+id/golbang" />
 
@@ -240,7 +244,7 @@
                             android:layout_width="fill_parent"
                             android:layout_height="5dp"
                             android:layout_alignParentBottom="true"
-                            android:layout_marginTop="135dp"
+                            android:layout_marginTop="145dp"
                             android:background="@color/gray" />
 
 
@@ -274,12 +278,20 @@
                             android:fontFamily="@font/medium"
                             android:text="@string/addFile"
                             android:textColor="@color/black"
-                            android:textSize="12sp"/>
-
+                            android:textSize="12sp"></TextView>
 
                     </RelativeLayout>
                 </LinearLayout>
-
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:backgroundTint="@color/tutu"
+                    android:fontFamily="@font/medium"
+                    android:text="저장"
+                    android:textColor="@color/black" />
             </LinearLayout>
         </ScrollView>
 

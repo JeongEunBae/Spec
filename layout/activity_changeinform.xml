@@ -34,7 +34,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="70dp"
                 android:fontFamily="@font/medium"
-                android:text="@string/monthly"
+                android:text="@string/changeinfo"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 
@@ -73,7 +73,8 @@
                         android:layout_height="60dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
-                        android:background="@drawable/button_background"
+                        android:backgroundTint="@color/gray"
+                        android:textColor="@color/black"
                         android:fontFamily="@font/medium"
                         android:text="Kakao로 시작하기" />
                 </LinearLayout>
@@ -279,6 +280,7 @@
                                     android:id="@+id/category_spinner"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
+                                    android:fontFamily="@font/medium"
                                     android:layout_weight="1" />
                             </TableRow>
 
@@ -292,6 +294,7 @@
                                     android:id="@+id/field_spinner"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
+                                    android:fontFamily="@font/medium"
                                     android:layout_weight="1" />
                             </TableRow>
 
@@ -305,6 +308,7 @@
                                     android:id="@+id/job_spinner"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
+                                    android:fontFamily="@font/medium"
                                     android:layout_weight="1" />
                             </TableRow>
 

@@ -33,13 +33,22 @@
 
 
         <ImageButton
-            android:id="@+id/btn_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/google_login"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:backgroundTint="@color/tutu"
-            app:srcCompat="@drawable/kakao_login_medium_wide"
-            android:text="Kakao로 시작하기"/>
+            app:srcCompat="@drawable/bluegoogle"
+            />
 
+        <ImageButton
+            android:id="@+id/naver_login"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/tutu"
+            app:srcCompat="@drawable/loginnaver"
+            />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

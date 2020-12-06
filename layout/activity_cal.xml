@@ -71,14 +71,14 @@
                     android:orientation="vertical"
                     tools:ignore="MissingConstraints">
 
-                    <CalendarView
-                        android:id="@+id/calendarView1"
-                        android:layout_width="wrap_content"
+                    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/calendarView"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="10dp"
-                        android:minDate="11/01/2020"
-                        tools:ignore="NotSibling,UnknownId" />
+                        app:mcv_selectionColor="#a9dbf0cb"
+                        app:mcv_showOtherDates="defaults"
+                        tools:ignore="MissingConstraints" />
 
 
 

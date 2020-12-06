@@ -69,6 +69,7 @@
                     android:layout_marginTop="25dp"
                     android:layout_marginBottom="15dp"
                     android:fontFamily="@font/medium"
+                    android:textColor="@color/black"
                     android:gravity="center"
                     android:text="관심 분야를 선택해주세요."
                     android:textSize="18sp" />
@@ -187,15 +188,16 @@
                         android:text="@string/item8" />
                 </LinearLayout>
 
-            <Button
-                android:id="@+id/btn_save"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:layout_gravity="center"
-                android:backgroundTint="@color/gray"
-                android:text="@string/btn_save"
-                android:textColor="@color/black"/>
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/medium"
+                    android:backgroundTint="@color/gray"
+                    android:text="@string/btn_save"
+                    android:textColor="@color/black"/>
 
             </LinearLayout>
         </ScrollView>
