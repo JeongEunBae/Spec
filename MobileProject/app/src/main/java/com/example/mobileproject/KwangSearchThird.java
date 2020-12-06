@@ -38,7 +38,7 @@ public class KwangSearchThird extends Fragment {
 
 
         state.add("노트북 챙기기");
-        state.add("세제사기");
+        state.add("세제 사기");
         state.add("마우스 챙기기");
         state.add("메모 작성");
 

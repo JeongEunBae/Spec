@@ -6,6 +6,7 @@
     <string name="applyCal">일정 등록</string>
     <string name="end">종료</string>
     <string name="start">시작</string>
+    <string name="weekly">주간 캘린더</string>
     <string name="applyDate">2020.11.20</string>
     <string name="applytime">18:00</string>
     <string name="searchActivity">모임 찾기</string>
@@ -72,23 +73,20 @@
     <string name="applicationContent6">개인 예비접수(1명)</string>
 
     <string name="interested">관심 정보 설정</string>
-    <string name="item1">봉사활동</string>
-    <string name="item2">인테리어</string>
-    <string name="item3">축제</string>
+    <string name="item1">기획/아이디어</string>
+    <string name="item2">광고/마케팅</string>
+    <string name="item3">논문/리포트</string>
     <string name="item4">기획/아이디어</string>
-    <string name="item5">디자인</string>
-    <string name="item6">IT</string>
-    <string name="item7">문학</string>
-    <string name="item8">과학</string>
-    <string name="item9">예체능</string>
-    <string name="item10">네이밍</string>
-    <string name="item11">서포터즈</string>
-    <string name="item12">취업</string>
-    <string name="item13">자격증</string>
-    <string name="item14">게임</string>
-    <string name="item15">어학</string>
-    <string name="item16">마케팅</string>
+    <string name="item5">영상/UCC/사진</string>
+    <string name="item6">디자인/캐릭터/웹툰</string>
+    <string name="item7">웹/모바일/플래시</string>
+    <string name="item8">게임/소프트웨어</string>
     <string name="btn_clear">초기화</string>
-    <string name="btn_save">확인</string>
+    <string name="btn_save">저장</string>
+
+    <string name="changeinfo">내 정보 수정</string>
+    <string name="notice">공지사항</string>
+    <string name="recentlist">최근 본 모임</string>
+    <string name="registertitle">활동 등록</string>
 
 </resources>

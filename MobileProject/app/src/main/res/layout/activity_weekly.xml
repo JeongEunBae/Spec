@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activityCal">
+    tools:context=".activityCal"
+    android:id="@+id/weekly">
 
     <!-- 헤더 -->
     <LinearLayout
@@ -35,7 +36,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="70dp"
                 android:fontFamily="@font/medium"
-                android:text="@string/monthly"
+                android:text="@string/weekly"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 
@@ -71,8 +72,18 @@
                     android:layout_height="wrap_content"
                     app:mcv_selectionColor="#a9dbf0cb"
                     app:mcv_showOtherDates="defaults"
-                    tools:ignore="MissingConstraints" />
+                    tools:ignore="MissingClass,MissingConstraints" />
 
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ListView
+                        android:id="@+id/list"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginTop="20dp"/>
+
+                </FrameLayout>
 
             </LinearLayout>
         </ScrollView>

@@ -39,6 +39,17 @@
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 
+            <ImageButton
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/tutu"
+                android:src="@drawable/ic_baseline_add_24" />
+
+
         </RelativeLayout>
 
     </LinearLayout>
@@ -99,12 +110,14 @@
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="10dp"
                             android:backgroundTint="@color/gray"
+                            android:fontFamily="@font/medium"
                             android:text="@string/hashtag"
                             android:textColor="@color/black" />
 
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/medium"
                             android:layout_marginLeft="125dp"
                             android:layout_marginTop="10dp"
                             android:backgroundTint="@color/gray"
@@ -114,6 +127,7 @@
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/medium"
                             android:layout_marginLeft="230dp"
                             android:layout_marginTop="10dp"
                             android:backgroundTint="@color/gray"
@@ -139,6 +153,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
+                            android:fontFamily="@font/medium"
                             android:layout_marginTop="10dp"
                             android:backgroundTint="@color/gray"
                             android:text="@string/hashtag"
@@ -148,6 +163,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="125dp"
+                            android:fontFamily="@font/medium"
                             android:layout_marginTop="10dp"
                             android:backgroundTint="@color/gray"
                             android:text="@string/hashtag"
@@ -157,6 +173,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="230dp"
+                            android:fontFamily="@font/medium"
                             android:layout_marginTop="10dp"
                             android:backgroundTint="@color/gray"
                             android:text="@string/hashtag"

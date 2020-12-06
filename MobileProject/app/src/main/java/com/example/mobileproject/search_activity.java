@@ -27,6 +27,17 @@ public class search_activity extends AppCompatActivity {
 
         });
 
+        ImageButton plus = (ImageButton) findViewById(R.id.btn_add);
+        plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(), ActivityRegistration.class);
+
+                startActivity(intent);
+            }
+        });
+
         ImageButton inMoim = (ImageButton) findViewById(R.id.inMoim);
         inMoim.setOnClickListener(new View.OnClickListener(){
 
