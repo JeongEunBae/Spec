@@ -23,15 +23,11 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="false" />
-    <loaded-nodes>
-      <connection connection-id="70f4d071-1acc-4082-b60f-844f3f576b56">
-        <schema name="specproject" object-types="constraint, index, procedure, dataset trigger, column, view, function, table" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="70f4d071-1acc-4082-b60f-844f3f576b56">
-      <console name="Spec" type="STANDARD" schema="mysql" session="Main">use specproject;
+      <console name="Spec" type="STANDARD" schema="mysql" session="Main"><![CDATA[use specproject;
 show tables;
 
 
@@ -64,7 +60,7 @@ SELECT * FROM activities a ORDER BY a.act_id;
 
 create table comment(
     id bigint(20) PRIMARY KEY
-);</console>
+);]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
