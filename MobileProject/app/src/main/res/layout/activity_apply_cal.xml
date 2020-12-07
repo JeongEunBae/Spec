@@ -126,13 +126,6 @@
                             android:hint="@string/inputTitle"
                             android:textColor="@color/black" />
 
-                        <ImageButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@color/tutu"
-                            android:layout_alignEnd="@+id/inputTitle"
-                            android:layout_alignRight="@+id/inputTitle"
-                            android:src="@drawable/loading" />
                     </RelativeLayout>
                 </LinearLayout>
 
@@ -149,6 +142,7 @@
                         android:layout_marginRight="20dp">
 
                         <TextView
+                            android:layout_marginTop="15dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/medium"
@@ -157,22 +151,11 @@
                             android:layout_marginLeft="10dp"
                             android:textSize="14dp"/>
 
-                        <TextView
-                            android:layout_width="match_parent"
+                        <EditText
+                            android:layout_width="140dp"
                             android:layout_height="wrap_content"
-                            android:text="@string/applyDate"
                             android:fontFamily="@font/medium"
-                            android:textColor="@color/black"
-                            android:layout_marginRight="50dp"
-                            android:gravity="right"/>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/applytime"
-                            android:fontFamily="@font/medium"
-                            android:textColor="@color/black"
-                            android:gravity="right"/>
+                            android:layout_alignParentRight="true"/>
 
                     </RelativeLayout>
                 </LinearLayout>
@@ -190,24 +173,20 @@
                         android:layout_marginRight="20dp">
 
                         <TextView
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="15dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/medium"
-                            android:layout_marginLeft="10dp"
                             android:textColor="@color/black"
                             android:text="@string/end"
+                            android:layout_marginLeft="10dp"
                             android:textSize="14dp"/>
 
-
-                        <TextView
-                            android:layout_marginTop="10dp"
-                            android:layout_width="match_parent"
+                        <EditText
+                            android:layout_width="140dp"
                             android:layout_height="wrap_content"
-                            android:text="@string/applytime"
                             android:fontFamily="@font/medium"
-                            android:textColor="@color/black"
-                            android:gravity="right"/>
+                            android:layout_alignParentRight="true"/>
 
                     </RelativeLayout>
                 </LinearLayout>

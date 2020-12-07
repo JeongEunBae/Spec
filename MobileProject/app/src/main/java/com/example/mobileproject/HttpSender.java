@@ -22,11 +22,11 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 
-public abstract class HttpClient {
+public abstract class HttpSender {
 
     private static final String TAG = "HTTPSender";
 
-    private static final String URL = "http://172.20.10.2:8080/";
+    private static final String URL = "http://localhost:8080/";
 
     protected String apiName;
     protected RequestBody body;
@@ -35,6 +35,7 @@ public abstract class HttpClient {
     
     public void send(){
         new AsyncTask<Void, Void, Void>(){
+            @Override
             protected Void doInBackground(Void... params){
                 OkHttpClient client = new OkHttpClient();
                 client.setConnectTimeout(10, TimeUnit.SECONDS);
@@ -42,9 +43,7 @@ public abstract class HttpClient {
 
                 try {
                     Response response = client.newCall(request).execute();
-
                     String result = response.body().string();
-
                     Log.e(TAG, "Result : " + result);
                 } catch (IOException e){
                     Log.e(TAG, "Execption");

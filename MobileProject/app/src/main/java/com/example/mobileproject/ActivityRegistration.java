@@ -88,7 +88,10 @@ public class ActivityRegistration extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                JSON();
+
+                finish();
+
+
             }
         });
     }

@@ -39,10 +39,7 @@ public class KwangSearchSecond extends Fragment {
         listview = (ListView) view.findViewById(R.id.list1); //화면에 보여줄 리스트 뷰
         listview.setAdapter(adapter); //어댑터를 리스트에 적용
 
-        state.add("방학 때");
-        state.add("잠자기");
-        state.add("놀러가기");
-        state.add("술 마시기");
+
 
         for (int i = 0; i < state.size(); i++) { //타이틀 갯수가 곧 모든 데이터 하나 하나의 갯수(타이틀 갯수가 4개면 다른 데이터 갯수도 4개)
             //이미지 갯수 만큼 데이터를 리스트에 추가해서 출력

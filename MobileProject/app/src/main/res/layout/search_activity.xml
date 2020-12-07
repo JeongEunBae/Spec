@@ -44,8 +44,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="20dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
                 android:background="@color/tutu"
                 android:src="@drawable/ic_baseline_add_24" />
 
@@ -102,36 +102,29 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="0dp"
-                        tools:ignore="MissingConstraints">
+                        tools:ignore="MissingConstraints"
+                        >
 
                         <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:backgroundTint="@color/gray"
                             android:fontFamily="@font/medium"
-                            android:text="@string/hashtag"
+                            android:text="@string/hashtag1"
                             android:textColor="@color/black" />
 
                         <Button
+                            android:layout_weight="1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/medium"
-                            android:layout_marginLeft="125dp"
+                            android:layout_marginLeft="210dp"
                             android:layout_marginTop="10dp"
                             android:backgroundTint="@color/gray"
-                            android:text="@string/hashtag"
-                            android:textColor="@color/black" />
-
-                        <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
                             android:fontFamily="@font/medium"
-                            android:layout_marginLeft="230dp"
-                            android:layout_marginTop="10dp"
-                            android:backgroundTint="@color/gray"
-                            android:text="@string/hashtag"
+                            android:text="@string/hashtag2"
                             android:textColor="@color/black" />
 
 
@@ -142,7 +135,39 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:ignore="MissingConstraints">
+                    tools:ignore="MissingConstraints"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        tools:ignore="MissingConstraints">
+
+                        <Button
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="210dp"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="@color/gray"
+                            android:fontFamily="@font/medium"
+                            android:text="@string/hashtag3"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="@color/gray"
+                            android:fontFamily="@font/medium"
+                            android:text="@string/hashtag4"
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -153,35 +178,24 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
-                            android:fontFamily="@font/medium"
                             android:layout_marginTop="10dp"
                             android:backgroundTint="@color/gray"
-                            android:text="@string/hashtag"
+                            android:fontFamily="@font/medium"
+                            android:text="@string/hashtag5"
                             android:textColor="@color/black" />
 
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="125dp"
-                            android:fontFamily="@font/medium"
+                            android:layout_marginLeft="210dp"
                             android:layout_marginTop="10dp"
                             android:backgroundTint="@color/gray"
-                            android:text="@string/hashtag"
-                            android:textColor="@color/black" />
-
-                        <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="230dp"
                             android:fontFamily="@font/medium"
-                            android:layout_marginTop="10dp"
-                            android:backgroundTint="@color/gray"
-                            android:text="@string/hashtag"
+                            android:text="@string/hashtag6"
                             android:textColor="@color/black" />
 
 
                     </RelativeLayout>
-
                 </LinearLayout>
 
 
@@ -215,21 +229,21 @@
                             android:layout_height="120dp"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="20dp"
-                            android:background="@color/gray" />
+                            android:background="@drawable/slogan1"/>
 
                         <ImageButton
                             android:layout_width="120dp"
                             android:layout_height="120dp"
                             android:layout_marginLeft="150dp"
                             android:layout_marginTop="20dp"
-                            android:background="@color/gray" />
+                            android:background="@drawable/slogan2" />
 
                         <ImageButton
                             android:layout_width="120dp"
                             android:layout_height="120dp"
                             android:layout_marginLeft="280dp"
                             android:layout_marginTop="20dp"
-                            android:background="@color/gray" />
+                            android:background="@drawable/slogan3" />
 
                     </RelativeLayout>
 
@@ -266,7 +280,7 @@
                             android:layout_marginStart="20dp"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="20dp"
-                            android:background="@color/gray" />
+                            android:background="@drawable/slogan4" />
 
                         <ImageButton
                             android:layout_width="128dp"
@@ -274,7 +288,7 @@
                             android:layout_marginStart="150dp"
                             android:layout_marginLeft="150dp"
                             android:layout_marginTop="20dp"
-                            android:background="@color/gray" />
+                            android:background="@drawable/slogan5" />
 
                         <ImageButton
                             android:layout_width="120dp"
@@ -283,7 +297,7 @@
                             android:layout_marginLeft="290dp"
                             android:layout_marginTop="20dp"
                             android:layout_marginBottom="20dp"
-                            android:background="@color/gray" />
+                            android:background="@drawable/slogan6" />
 
                     </RelativeLayout>
 

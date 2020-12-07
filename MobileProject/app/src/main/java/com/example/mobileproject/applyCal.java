@@ -78,6 +78,23 @@ public class applyCal extends AppCompatActivity {
 
         });
 
+        Button savebtn = (Button) findViewById(R.id.applyActivity);
+        savebtn.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View view) {
+
+                Toast.makeText(getApplicationContext(), "등록되었습니다.", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), apply_cal.class);
+
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+
+                startActivity(intent);
+            }
+
+
+
+        });
+
         ImageButton searchbtn = (ImageButton) findViewById(R.id.searchbtn);
         searchbtn.setOnClickListener(new View.OnClickListener() {
 

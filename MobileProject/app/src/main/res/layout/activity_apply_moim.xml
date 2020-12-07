@@ -92,7 +92,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="30dp"
                             android:fontFamily="@font/medium"
-                            android:text="@string/explainMoim"
+                            android:text="2020호아빈의 리본 평화 영상"
                             android:textColor="@color/black"
                             android:textSize="10sp" />
 
@@ -123,7 +123,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/bold"
-                            android:text="@string/explainMoim"
+                            android:text="2020호아빈의 리본 평화 영상"
                             android:textColor="@color/black"
                             android:textSize="12sp" />
 
@@ -133,7 +133,7 @@
                             android:layout_alignParentRight="true"
                             android:layout_gravity="end"
                             android:fontFamily="@font/medium"
-                            android:text="@string/maxPeople"
+                            android:text="선착순 / 무"
                             android:textColor="@color/black"
                             android:textSize="12sp" />
 
@@ -173,7 +173,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/medium"
-                            android:text="@string/applyinfo"
+                            android:text="신청자 정보 입력"
                             android:textColor="@color/black"
                             android:textSize="12sp" />
 
@@ -201,7 +201,7 @@
 
                         <EditText
                             android:id="@+id/addr"
-                            android:layout_width="100dp"
+                            android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:layout_marginLeft="20dp"
                             android:fontFamily="@font/medium"
@@ -210,26 +210,10 @@
                             android:backgroundTint="@color/gray"
                             android:hint="@string/addr" />
 
-                        <TextView
-                            android:id="@+id/golbang"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_toRightOf="@+id/addr"
-                            android:text=" @"
-                            android:textColor="@color/black" />
 
-                        <Spinner
-                            android:id="@+id/email_spinner"
-                            android:layout_width="100dp"
-                            android:layout_height="40dp"
-                            android:layout_marginLeft="20dp"
-                            android:fontFamily="@font/medium"
-                            android:layout_marginTop="35dp"
-                            android:layout_toRightOf="@+id/golbang" />
 
                         <Button
+                            android:id="@+id/doublecheck"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="50dp"

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +16,7 @@ import com.prolificinteractive.materialcalendarview.CalendarMode;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 
 import java.util.Calendar;
+import java.util.Collections;
 
 import devs.mulham.horizontalcalendar.HorizontalCalendar;
 
@@ -24,14 +26,18 @@ public class weekly extends AppCompatActivity {
     private View view;
     private ListView listview;
     private KwangWeekListAdapter adapter;
-    private String[] Title = {"모바일 수업", "객체 수업", "못 자는 날", "방콕하기"}; //활동 명
-    private String[] Date = {"12월 7일", "12월 7일", "12월 7일", "12월 7일"}; //날짜 받아서 넣기
+    private String[] Title = {"모바일 제출"}; //활동 명
+    private String[] Date = {"12월 7일"}; //날짜 받아서 넣기
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weekly);
+
+        MaterialCalendarView calendarView = findViewById(R.id.calendarView);
+        calendarView.setSelectedDate(CalendarDay.today());
+        calendarView.addDecorator(new EventDecorator(Color.RED, Collections.singleton(CalendarDay.today())));
 
         //리스트뷰
         frag4 = new KwangWeekList();

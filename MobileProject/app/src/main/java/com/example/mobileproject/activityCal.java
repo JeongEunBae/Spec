@@ -137,11 +137,9 @@ public class activityCal extends AppCompatActivity {
 
             public void onClick(View view) {
 
-                Intent intent = new Intent(getApplicationContext(), weekly.class);
-
-                intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
-
-                startActivity(intent);
+                HttpSender sender = new TestHttpSender();
+                sender.setBodyContents("Dobby is Free");
+                sender.send();
             }
 
         });

@@ -37,11 +37,6 @@ public class KwangSearchThird extends Fragment {
         listview.setAdapter(adapter); //어댑터를 리스트에 적용
 
 
-        state.add("노트북 챙기기");
-        state.add("세제 사기");
-        state.add("마우스 챙기기");
-        state.add("메모 작성");
-
         for (int i = 0; i < state.size(); i++) { //타이틀 갯수가 곧 모든 데이터 하나 하나의 갯수(타이틀 갯수가 4개면 다른 데이터 갯수도 4개)
             //이미지 갯수 만큼 데이터를 리스트에 추가해서 출력
             title.add("");
