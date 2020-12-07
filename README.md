@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Spec
 사용자 맞춤 일정 관리 앱
 
@@ -16,3 +17,8 @@ https://www.figma.com/file/BtHFaDoT4FEmtnbpMBVHJG/%EB%AA%A8%EB%B0%94%EC%9D%BC-%E
 >>>>>>> activity
 >>>>>>> calendar
 >>>>>>> login
+=======
+# SpecFrontEnd
+사용자 맞춤 일정 관리 앱
+민진 FrontEnd
+>>>>>>> min
