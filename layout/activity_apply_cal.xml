@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".applyCal">
+
+    <!-- 헤더 -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/themeColor">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@color/tutu"
+                android:src="@drawable/threebar" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:fontFamily="@font/medium"
+                android:text="@string/monthly"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="60dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:fontFamily="@font/medium"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/applyCal"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/closebtn"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/tutu"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/close_big" />
+
+                    <Button
+                        android:id="@+id/applyActivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/medium"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="@color/tutu"
+                        android:text="@string/apply"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp">
+
+                        <EditText
+                            android:id="@+id/inputTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/medium"
+                            android:hint="@string/inputTitle"
+                            android:textColor="@color/black" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/tutu"
+                            android:layout_alignEnd="@+id/inputTitle"
+                            android:layout_alignRight="@+id/inputTitle"
+                            android:src="@drawable/loading" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/medium"
+                            android:textColor="@color/black"
+                            android:text="@string/start"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/applyDate"
+                            android:fontFamily="@font/medium"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="50dp"
+                            android:gravity="right"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/applytime"
+                            android:fontFamily="@font/medium"
+                            android:textColor="@color/black"
+                            android:gravity="right"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp">
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/medium"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black"
+                            android:text="@string/end"
+                            android:textSize="14dp"/>
+
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/applytime"
+                            android:fontFamily="@font/medium"
+                            android:textColor="@color/black"
+                            android:gravity="right"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/calbtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@color/themeColor"
+                android:src="@drawable/calender" />
+
+            <ImageButton
+                android:id="@+id/checkbtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@color/themeColor"
+                android:src="@drawable/checkbox_checked" />
+
+            <ImageButton
+                android:id="@+id/bulbbtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@color/themeColor"
+                android:src="@drawable/bulb" />
+
+            <ImageButton
+                android:id="@+id/searchbtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@color/themeColor"
+                android:src="@drawable/search" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
